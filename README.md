@@ -1,37 +1,50 @@
 ```javascript
 
+Test: "It splits the inputed string into an array."
+code: 
+const inputText = "cat"
+pigLatin(text);
+Expected output: ["c", "a", "t"]
+
+Test: "It ignores non-alphabetical characters."
+Code: pigLatin("*&$92% ");
+Expected Output: 0
+
 Test: "It recognizes a single vowel regardless of capitilization."
-Code: vowelCounter("a");
+Code: pigLatin("a");
 Expected Output: 1
 
 test: "It recognizes when the first letter of the word is a vowel."
-code: 
-Expected Output
+code: pigLatin("and")
+Expected Output: 1
 
 test: "When the first letter of the word is a vowel it will add way."
-code:
-Expected OutPut
+code: pigLatin("and")
+Expected OutPut: "andway"
 
 test: "It recognizes a consonant."
-code:
-Expected OutPut
+code: pigLatin("c")
+Expected OutPut: 1
 
 test: "It recognizes multiple consonants in a word."
-code:
-Expected OutPut
+code: pigLatin("cat")
+Expected OutPut: 2
 
 test: "It recognizes consonants at the begining of the word."
-code:
-Expected OutPut
+code: pigLatin("chart")
+Expected OutPut: 2
+
+test: "It recognizes index[1]=q as a vowel"
+
 
 test: "It moves the consonants from the begining of the word to end and adds ay."
-code:
-Expected OutPut
+code: pigLatin("chart")
+Expected OutPut: "artchay"
  
 test: "It recognizes when index[0] = q and index[1] = u."
-code:
-Expected OutPut
+code: pigLatin("quote")
+Expected OutPut: 1
 
 test: "It recognizes when index[0] = q and index[1] = u and moves them to the back of the word and adds ay."
-code:
-Expected OutPut
+code: pigLatin("quote")
+Expected OutPut: "otequay"
