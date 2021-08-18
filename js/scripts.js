@@ -19,6 +19,17 @@ function recCons(word) {
   }
 }
 
+function allCons(word, consonants) {
+  const wordArray = word.split(" ");
+  let cons = [];
+  wordArray.forEach(function(letter) {
+    if (consonants.includes(letter)) {
+      console.log("are you working?");
+      return true;
+    } 
+    return false
+  })
+}
 
 
 function pigLatin(text){
