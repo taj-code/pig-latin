@@ -2,18 +2,18 @@
 
 Test: "It splits the inputed string into an array."
 code: 
-let userInput = "cat";
-let inputArray = userInput.split(" ");
+userInput = "cat";
+let inputArray = userInput.split("");
 return inputArray
 Expected output: ["c", "a", "t"]
 
-Test: "It ignores non-alphabetical characters."
-Code: pigLatin("*&$92% ");
-Expected Output: 0
+// Test: "It ignores non-alphabetical characters."
+// Code: pigLatin("*&$92% ");
+// Expected Output: 0
 
 Test: "It recognizes a single vowel regardless of capitilization."
 Code: pigLatin("a");
-Expected Output: 1
+Expected Output: true
 
 test: "It recognizes when the first letter of the word is a vowel."
 code: pigLatin("and")
