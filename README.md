@@ -2,8 +2,9 @@
 
 Test: "It splits the inputed string into an array."
 code: 
-const inputText = "cat"
-pigLatin(text);
+let userInput = "cat";
+let inputArray = userInput.split(" ");
+return inputArray
 Expected output: ["c", "a", "t"]
 
 Test: "It ignores non-alphabetical characters."
